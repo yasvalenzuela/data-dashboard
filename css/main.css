@@ -1,3 +1,101 @@
 /*
  * Estilos de tu proyecto
  */
+ /*menu*/
+header{
+	background-color: #FFC107;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+/*primera parte menu*/
+div .fa-bars{
+	position: absolute;
+	left: 50px;
+	top: 20px;
+	font-size: 20px;
+}
+
+/*buscador*/
+#buscador{
+	position: absolute;
+	margin-top: 0px;
+}
+
+#buscador input{
+	/*position: absolute;*/
+	border: 1px solid transparent;
+	border-radius: 15px;
+	width: 300px;
+	height: 20px;
+	/*margin-top: 20px;*/
+	margin-left: 810px;
+}
+
+#buscador span i{
+	position: absolute;
+	top: 3px;
+	left: 1090px;
+}
+
+/*iconos finales del menu*/
+#lastMenu li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+}
+
+#lastMenu li:first-child{
+	margin-left: 1150px;
+}
+
+#lastMenu li:last-child{
+	margin-left: -15px;
+}
+/*aqui va la imagen de buenos dias*/
+#bienvenida {
+	background-image: url(../assets/images/fondo-bienvenida.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 25% 13%; 
+	width: 1365px;
+	height: 300px;
+	margin-left: -8px;
+	margin-top: 45px;
+	background: linear-gradient(#FFC800, #FFEF01);
+	/*border: 1px solid black;*/
+}
+#bienvenida img{
+	width: 150px;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+#bienvenida h2{
+	font-size: 30px;
+	margin-left: 320px;
+	margin-top: -80px;
+}
+/*actualizacion lms*/
+#actualizacion{
+	width: 580px;
+	height: 300px;
+	margin-top: 5px;
+	margin-left: 30px;
+	border: 1px solid yellow;
+	font-size: 20px;
+}
+/*calendario*/
+/*eventos*/
+#eventos{
+	width: 580px;
+	height: 300px;
+	margin-top: -302px;
+	margin-left: 680px;
+	border: 1px solid blue;
+	font-size: 20px;
+}
+/*indicadores*/
+
