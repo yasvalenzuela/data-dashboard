@@ -71,12 +71,19 @@
     </section>
     <!-- aqui va la imagen de bienvenida -->
     <section id="bienvenida">
-      <div id="date">
-        <img src="assets/images/dateB.png" alt="">
+      <!-- div date tiene comportamiento de boton, muestra el Popup calendario -->
+      <div id="date" type="button">
+        <!-- Contenedor para calendario PopUp -->
+        <div id="datePopUp" class="hideCalendar" "seeCalendar">
+          <img src="assets/images/calendar_demo.png" alt="Calendar">
+        </div>
       </div>
       <h1>¡Bienvenida Vale Smith!</h1>
     </section>
     <!-- actualizacion de lms -->
+    <section id="indicadores">
+      <!-- indicadores -->
+    </section>
     <section id="actualizacion">
       <h3>Actualizaciones LMS</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -94,9 +101,6 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <p>Autem eos, repudiandae minus modi accusantium dolorum nihil dignissimos.</p>
-    </section>
-    <section id="indicadores">
-      <!-- indicadores -->
     </section>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>

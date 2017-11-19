@@ -141,17 +141,36 @@ nav {
 	margin 0;
  }
  
+/*div comportamiento boton para mostrar calendario*/
  #date {
 	/*border: 1px solid black; /*linea de prueba*/
+	background-image: url(../assets/images/dateB.png);
+	background-size : 95%;
+	background-position : center;
 	background-color: rgb(255, 157, 0);
 	width: 10%;
  }
 
-#date img {
-	/*border: 1px solid black;/*linea de prueba*/
-	width: 100%;
-  }
+ /* Calendario oculto popup*/
+ #datePopUp {
+	 position: absolute;
+	 width: 20%;
+ 	top: 16em;
+ 	left: 2%;
+ }
 
+ #datePopUp img {
+	 width: 100%;
+ }
+
+ /*clases especiales para el Calendario popup*/
+ .seeCalendar {
+ 	display: block;
+ }
+
+ .hideCalendar {
+ 	display: none;
+ }
 
  /*menu oculto*/
  #menuOculto {
@@ -174,3 +193,5 @@ nav {
  #desplegado h5 {
  	margin-left: 40px;
  }
+
+
