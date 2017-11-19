@@ -4,7 +4,7 @@
 
 // Puedes hacer uso de la base de datos a través de la variable `data`
 //console.log(data);
-//var listita = document.getElementById('List');
+
 //menu parte oculto
 var menuOculto = document.getElementById('menuOculto');
 menuOculto.style.display = 'none';
@@ -18,8 +18,9 @@ menuDesplegado.addEventListener('click', function(){
 	document.getElementById('indicadores').style.display = 'none';
 	var menuOculto = document.getElementById('menuOculto');
 	menuOculto.style.display = 'block';
-
 });
+
+
 
 //MEXICO
 //evento de click de sede mexico despliega generaciones
@@ -56,9 +57,27 @@ document.getElementById('subIconoClick').style.display= 'none';
 var iconoClick = document.getElementById('iconoClick');
 iconoClick.addEventListener('click', function(){
 	var subIconoClick = document.getElementById('subIconoClick').style.display= 'inline-block';
-	iconoClick.addEventListener('click', function(){
-		document.getElementById('subIconoClick').style.display='none';
-	})
 })
 
-//
+//evento de click al seleccionar primera generacion
+//evento de click al seleccionar segunda generacion
+//evento de click al seleccionar tercera generacion
+
+
+//HEAD
+// funcion que muestra el demo-calendario
+//document.getElementById('datePopUp').style.display='none';
+var btnCalendar = document.getElementById("date");
+btnCalendar.addEventListener("click", function() {
+	var calendar = document.getElementById('datePopUp');
+	if (calendar.classList.contains("hideCalendar")) {
+		calendar.classList.remove("hideCalendar");
+		menu.classList.add("seeCalendar");
+	} else {
+		console.log("ocultar");
+		calendar.classList.remove("seeCalendar");
+		calendar.classList.add("hideCalendar");
+		
+	}
+
+});
