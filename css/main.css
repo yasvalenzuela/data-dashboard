@@ -1,124 +1,176 @@
 /*
  * Estilos de tu proyecto
  */
- /*menu*/
-header{
-	background-color: #FFC107;
+
+* {
+	/* todos los elementos trabajaran de la misma manera, padding y border no incrementan su ancho hacia fuera*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif; /* fuente de los textos*/	
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px; /* establece tamaño por defecto de la tipografía*/
+}
+
+/* contenedor elementos logo y nav */
+header {
+	/*border: 1px solid black; linea de prueba*/ 
+	width: 100%;
+	height: auto;
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	background-color: #FFC107;
+	display: inline-flex; /* contenedor flex padre: ordena los items hijos en modo inline-flex*/
+	align-items: center; /*Flex opción: centra vertical los items hijos interiores*/
+}
+
+#logo{
+	/*border: 1px solid black; linea de prueba*/
+	width: 20%;
+	background-color: #fff;
+	padding: 1%;
+}
+
+#logo img{
+	/*border: 1px solid black; linea de prueba*/
+}
+
+/* contenedor elementos cont-menu */
+nav {
+	/*border: 1px solid black; linea de prueba*/
+	color: rgb(71, 71, 71);
 	width: 100%;
+	padding: 1% 2%;/*margen centrado para elmentos dentro de nav*/
 }
 
-/*primera parte menu*/
-div .fa-bars{
-	position: absolute;
-	left: 50px;
-	top: 20px;
-	font-size: 20px;
+/* contenedor elementos p, menu, buscador, last menu */
+#cont_menu {
+	/*border: 1px solid black; linea de prueba*/
+	display: inline-flex; /*contenedor flex padre organiza los items hijos interiores como inline*/
+	font-size: 1.5em;
+	width: 100%;
+	justify-content: space-between; /*justificación flex : Distribuye los ítems hijos desde el inicio hasta el final.*/
+	flex-wrap: nowrap;
 }
 
-
-/*buscador*/
-#buscador{
-	position: absolute;
-	margin-top: 0px;
+/* texto superior My Dashboard */
+#cont_menu p {
+	/*border: 1px solid black; linea de prueba*/
+	font-family: 'PT Sans',sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin: 0 1% 0 0;
+	white-space:nowrap; /* texto en una sola línea */
 }
 
-#buscador input{
-	/*position: absolute;*/
+/* Contenedor primera parte menu e icono desplegado */
+#menu {
+	/*border: 1px solid black; linea de prueba*/
+	padding: 0 2%;
+}
+
+#iconoDesplegado {
+	color: rgb(71, 71, 71);
+}
+
+/* Contenedor input y boton search */
+#buscador {
+	/*border: 1px solid black; linea de prueba*/
+	width: 100%; /* ancho para la barra input*/
+	display: inline-flex; /*organiza items hijos input e icono como inline*/
+	justify-content: space-between; /*flex opción: distribuye input e icono desde el principio y fin del contenedor*/
+	padding: 0 1%;
+}
+
+/*input buscador*/
+#search {
 	border: 1px solid transparent;
 	border-radius: 15px;
-	width: 300px;
-	height: 20px;
-	/*margin-top: 20px;*/
-	margin-left: 810px;
+	width: 100%; /* alarga barra input automaticamente*/
+	margin-right: 2%;
+	padding: 0 2%;
+	font-size: 0.8em;
 }
 
-#buscador span i{
-	position: absolute;
-	top: 3px;
-	left: 1090px;
+/*input buscador texto*/
+#search ::placeholder{
 }
 
-/*iconos finales del menu*/
-#lastMenu li{
+/* Contenedor ul iconos finales del menu */
+#lastMenu {
+	/*border: 1px solid black; linea de prueba*/
+}
+
+#lastMenu ul {
+	/*border: 1px solid black; linea de prueba*/
 	list-style: none;
-	display: inline-block;
-	margin-right: 15px;
-	font-size: 20px;
+	display: inline-flex;
+	margin: 0;
 }
 
-#lastMenu li:first-child{
-	margin-left: 1150px;
+#lastMenu li {
+	/*border: 1px solid black; linea de prueba*/
+	padding: 0 0.4em;
 }
 
-#lastMenu li:last-child{
-	margin-left: -15px;
-}
-/*menu oculto*/
-#menuOculto {
-	background-color: #ffffff;
-	width: 200px;
-	margin-top: 0px;
-	border: 1px solid red;
-}
-
-#desplegado img{
-	width: 170px;
-	margin-top: 50px;
-	margin-left: 10px;
-}
-
-#desplegado h3{
-	margin-left: 20px;
-}
-
-#desplegado h5{
-	margin-left: 40px;
-}
-
-/*aqui va la imagen de buenos dias*/
+/* Contenedor bienvenida */
 #bienvenida {
-	background-image: url(../assets/images/fondo-bienvenida.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 25% 13%; 
-	width: 1365px;
-	height: 300px;
-	margin-left: -8px;
-	margin-top: 45px;
-	background: linear-gradient(#FFC800, #FFEF01);
-	/*border: 1px solid black;*/
-}
-#bienvenida img{
-	width: 150px;
-	margin-left: 140px;
-	margin-top: 100px;
-}
-#bienvenida h2{
-	font-size: 30px;
-	margin-left: 320px;
-	margin-top: -80px;
-}
-/*actualizacion lms*/
-#actualizacion{
-	width: 580px;
-	height: 300px;
-	margin-top: 5px;
-	margin-left: 30px;
-	border: 1px solid yellow;
-	font-size: 20px;
-}
-/*calendario*/
-/*eventos*/
-#eventos{
-	width: 580px;
-	height: 300px;
-	margin-top: -302px;
-	margin-left: 680px;
-	border: 1px solid blue;
-	font-size: 20px;
-}
-/*indicadores*/
+	/*border: 1px solid black; /*linea de prueba*/
+	width: 100%;
+	height: 10%;
+	background-image: url(../assets/images/border-bienvenida.png);
+	background-color: #FFC107;
+	background-size: 70%; 
+	padding: 10em 3em 3em; 
+	background-repeat: repeat-x;
+	display: inline-flex; /*contenedor flex padre organiza los items hijos interiores como inline*/
+ }
 
+ #bienvenida h1 {
+	/*border: 1px solid black;/*linea de prueba*/
+	font-family: 'PT Sans', sans-serif;
+	font-size: 2em;
+	color: rgb(102, 101, 101);
+	width: 100%;
+	padding-left: 2%;
+	margin 0;
+ }
+ 
+ #date {
+	/*border: 1px solid black; /*linea de prueba*/
+	background-color: rgb(255, 157, 0);
+	width: 10%;
+ }
+
+#date img {
+	/*border: 1px solid black;/*linea de prueba*/
+	width: 100%;
+  }
+
+
+ /*menu oculto*/
+ #menuOculto {
+ 	background-color: #ffffff;
+ 	width: 200px;
+ 	margin-top: 0px;
+ 	border: 1px solid red;
+ }
+
+ #desplegado img {
+ 	width: 170px;
+ 	margin-top: 50px;
+ 	margin-left: 10px;
+ }
+
+ #desplegado h3 {
+ 	margin-left: 20px;
+ }
+
+ #desplegado h5 {
+ 	margin-left: 40px;
+ }
