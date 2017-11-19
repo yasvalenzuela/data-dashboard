@@ -5,14 +5,18 @@
 // Puedes hacer uso de la base de datos a través de la variable `data`
 //console.log(data);
 //var listita = document.getElementById('List');
+//menu parte oculto
+var menuOculto = document.getElementById('menuOculto');
+menuOculto.style.display = 'none';
 
-var iconoDesplegado = document.getElementById('iconoDesplegado');
-iconoDesplegado.addEventListener('click', function(){
+//creo el evento de click
+var menuDesplegado = document.getElementById('iconoDesplegado');
+menuDesplegado.addEventListener('click', function(){
 	document.getElementById('bienvenida').style.display = 'none';
 	document.getElementById('actualizacion').style.display = 'none';
 	document.getElementById('eventos').style.display = 'none';
 	document.getElementById('indicadores').style.display = 'none';
-	var desplegado = document.getElementById('desplegado');
-	desplegado.style.display = 'block';
+	var menuOculto = document.getElementById('menuOculto');
+	menuOculto.style.display = 'block';
 
 });
