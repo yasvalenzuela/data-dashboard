@@ -9,7 +9,7 @@
 var menuOculto = document.getElementById('menuOculto');
 menuOculto.style.display = 'none';
 
-//creo el evento de click
+//creo el evento de click de menu
 var menuDesplegado = document.getElementById('iconoDesplegado');
 menuDesplegado.addEventListener('click', function(){
 	document.getElementById('bienvenida').style.display = 'none';
@@ -20,3 +20,45 @@ menuDesplegado.addEventListener('click', function(){
 	menuOculto.style.display = 'block';
 
 });
+
+//MEXICO
+//evento de click de sede mexico despliega generaciones
+document.getElementById('subIcono').style.display='none';
+var clickIcono = document.getElementById('clickIcono');
+clickIcono.addEventListener('click', function(){
+	var subIcono = document.getElementById('subIcono');
+	subIcono.style.display='inline-block';
+})
+
+//AREQUIPA
+//evento de click sede arequipa despliega generaciones
+document.getElementById('subEventoClick').style.display='none';
+var eventoClick = document.getElementById('eventoClick');
+eventoClick.addEventListener('click', function(){
+	var subEventoClick = document.getElementById('subEventoClick');
+	subEventoClick.style.display='inline-block';
+})
+
+//LIMA
+//evento de click sede lima despliega generaciones
+document.getElementById('subClickEvento').style.display='none';
+var clickEvento = document.getElementById('clickEvento');
+clickEvento.addEventListener('click', function(){
+	var subClickEvento = document.getElementById('subClickEvento');
+	subClickEvento.style.display='inline-block';
+})
+
+
+//santiago
+//evento de click de seleccion de sede santiago se despliega las generaciones
+//debo arreglarla porque cuando vuelvo hacer click no se despliega
+document.getElementById('subIconoClick').style.display= 'none';
+var iconoClick = document.getElementById('iconoClick');
+iconoClick.addEventListener('click', function(){
+	var subIconoClick = document.getElementById('subIconoClick').style.display= 'inline-block';
+	iconoClick.addEventListener('click', function(){
+		document.getElementById('subIconoClick').style.display='none';
+	})
+})
+
+//
