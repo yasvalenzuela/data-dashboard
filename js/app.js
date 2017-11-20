@@ -12,6 +12,7 @@ menuOculto.style.display = 'none';
 //creo el evento de click de menu para que se despliegue
 var menuDesplegado = document.getElementById('iconoDesplegado');
 menuDesplegado.addEventListener('click', function(){
+	document.getElementById('cont-global').style.display='none';
 	document.getElementById('bienvenida').style.display = 'none';
 	document.getElementById('actualizacion').style.display = 'none';
 	document.getElementById('eventos').style.display = 'none';
@@ -91,8 +92,8 @@ circleDesplegadoDos.addEventListener('click', function(){
 
 
 //santiago
-document.getElementById('title').style.display='none';
-document.getElementById('indicadores').style.display='none';
+document.getElementById('cont-global').style.display='none';
+//document.getElementById('indicadores').style.display='none';
 //evento de click de seleccion de sede santiago se despliega las generaciones
 //debo arreglarla porque cuando vuelvo hacer click no se despliega
 document.getElementById('subIconoClick').style.display= 'none';
@@ -104,10 +105,10 @@ iconoClick.addEventListener('click', function(){
 //evento de click al clickear primera generacion
 var desplegadoCircle = document.getElementById('desplegadoCircle');
 desplegadoCircle.addEventListener('click', function(){
-	var title = document.getElementById('title');
-	title.style.display='block';
+	document.getElementById('cont-global').style.display='inline-block';
+    //title.style.display='block';
 	var indicadores = document.getElementById('indicadores');
-	indicadores.style.display='block';
+	indicadores.style.display='inline-block';
 })
 
 //evento de click al clickear segunda generacion

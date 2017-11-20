@@ -170,6 +170,7 @@ nav {
  	width: 200px;
  	margin-top: 0px;
  	border: 1px solid red;
+ 	position: fixed;
  }
 
  #desplegado img {
@@ -202,8 +203,9 @@ nav {
 /* contendor global flex*/
 
 #cont-global {
-	border: 1px solid black;/*linea de prueba*/
-	margin: 0 4%;
+	/*border: 1px solid black;/*linea de prueba*/
+	width: 80%;
+	margin: 7% 0% 0% 15%;
 	padding: 2%;
 }
 
@@ -245,6 +247,7 @@ nav {
 	padding: 0.5em;
 	margin: 1%;
 	width: 25%;
+	display: -webkit-inline-box;
 
 }
 
@@ -254,6 +257,7 @@ nav {
 	padding: 0.5em;
 	flex-grow: 2;
 	width: 40%;
+	display: -webkit-inline-box;
 }
 
 .cont-child {
