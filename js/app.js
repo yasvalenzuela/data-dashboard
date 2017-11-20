@@ -108,7 +108,7 @@ desplegadoCircle.addEventListener('click', function(){
 	document.getElementById('cont-global').style.display='inline-block';
     //title.style.display='block';
 	var indicadores = document.getElementById('indicadores');
-	indicadores.style.display='inline-block';
+	indicadores.style.display='inline-flex';
 })
 
 //evento de click al clickear segunda generacion
