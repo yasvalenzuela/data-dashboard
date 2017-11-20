@@ -94,11 +94,7 @@ nav {
 	font-size: 0.8em;
 }
 
-/*input buscador texto*/
-
 /* Contenedor ul iconos finales del menu */
-
-
 #lastMenu ul {
 	/*border: 1px solid black; linea de prueba*/
 	list-style: none;
@@ -142,7 +138,8 @@ nav {
 	background-size: contain;
 	background-position : center;
 	background-color: rgb(255, 157, 0);
-	width: 10%;
+	height: auto;
+	width: 15%;
  }
 
  /* Calendario oculto popup*/
@@ -155,7 +152,7 @@ nav {
 
  #datePopUp img {
 	width: 100%;
-	filter: drop-shadow(1px 1px 3px #444); /*pone sombra de contorno a una imagen con trasnparencia*/
+	filter: drop-shadow(1px 1px 3px #444); /*pone sombra de contorno a una imagen con transparencia*/
  }
 
  /*clases especiales para el Calendario popup*/
@@ -211,9 +208,9 @@ nav {
 }
 
 .menuSede {
-border: 1px solid black; /*linea de prueba*/
-display: inline-flex; /* items hijos botones comportamiento inline-block*/
-justify-content: center; /* items hijos centrados horizontalmente*/
+	border: 1px solid black; /*linea de prueba*/
+	display: inline-flex; /* items hijos botones comportamiento inline-block*/
+	justify-content: center; /* items hijos centrados horizontalmente*/
 }
 
 /* contendor global flex*/
