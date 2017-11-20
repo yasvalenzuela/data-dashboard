@@ -9,7 +9,7 @@
 var menuOculto = document.getElementById('menuOculto');
 menuOculto.style.display = 'none';
 
-//creo el evento de click de menu
+//creo el evento de click de menu para que se despliegue
 var menuDesplegado = document.getElementById('iconoDesplegado');
 menuDesplegado.addEventListener('click', function(){
 	document.getElementById('bienvenida').style.display = 'none';
@@ -21,7 +21,6 @@ menuDesplegado.addEventListener('click', function(){
 });
 
 
-
 //MEXICO
 //evento de click de sede mexico despliega generaciones
 document.getElementById('subIcono').style.display='none';
@@ -30,6 +29,8 @@ clickIcono.addEventListener('click', function(){
 	var subIcono = document.getElementById('subIcono');
 	subIcono.style.display='inline-block';
 })
+
+
 
 //AREQUIPA
 //evento de click sede arequipa despliega generaciones
@@ -60,6 +61,7 @@ iconoClick.addEventListener('click', function(){
 })
 
 //evento de click al seleccionar primera generacion
+
 //evento de click al seleccionar segunda generacion
 //evento de click al seleccionar tercera generacion
 
@@ -72,7 +74,7 @@ btnCalendar.addEventListener("click", function() {
 	var calendar = document.getElementById('datePopUp');
 	if (calendar.classList.contains("hideCalendar")) {
 		calendar.classList.remove("hideCalendar");
-		menu.classList.add("seeCalendar");
+		calendar.classList.add("seeCalendar");
 	} else {
 		console.log("ocultar");
 		calendar.classList.remove("seeCalendar");
