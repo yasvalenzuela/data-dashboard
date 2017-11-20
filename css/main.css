@@ -1,5 +1,5 @@
 /*
- * Estilos de tu proyecto
+Estilos de tu proyecto
  */
 
 * {
@@ -36,9 +36,6 @@ header {
 	padding: 1%;
 }
 
-#logo img{
-	/*border: 1px solid black; linea de prueba*/
-}
 
 /* contenedor elementos cont-menu */
 nav {
@@ -98,13 +95,9 @@ nav {
 }
 
 /*input buscador texto*/
-#search ::placeholder{
-}
 
 /* Contenedor ul iconos finales del menu */
-#lastMenu {
-	/*border: 1px solid black; linea de prueba*/
-}
+
 
 #lastMenu ul {
 	/*border: 1px solid black; linea de prueba*/
@@ -138,14 +131,15 @@ nav {
 	color: rgb(102, 101, 101);
 	width: 100%;
 	padding-left: 2%;
-	margin 0;
+	margin: 0;
  }
  
 /*div comportamiento boton para mostrar calendario*/
  #date {
 	/*border: 1px solid black; /*linea de prueba*/
 	background-image: url(../assets/images/dateB.png);
-	background-size : 95%;
+	background-repeat: no-repeat;
+	background-size: contain;
 	background-position : center;
 	background-color: rgb(255, 157, 0);
 	width: 10%;
@@ -153,14 +147,15 @@ nav {
 
  /* Calendario oculto popup*/
  #datePopUp {
-	 position: absolute;
-	 width: 20%;
+	position: absolute;
+	width: 20%;
  	top: 16em;
  	left: 2%;
  }
 
  #datePopUp img {
-	 width: 100%;
+	width: 100%;
+	filter: drop-shadow(1px 1px 3px #444); /*pone sombra de contorno a una imagen con trasnparencia*/
  }
 
  /*clases especiales para el Calendario popup*/
@@ -194,7 +189,6 @@ nav {
  	margin-left: 40px;
  }
 
-<<<<<<< HEAD
  #desplegado h6 {
  	margin-left: 60px;
  }
@@ -207,6 +201,28 @@ nav {
  	margin-left: 500px; 
  }
  */
-=======
 
->>>>>>> b8c4016da02060633d2501a83366df7475f9db10
+ #title {
+	border: 1px solid black; /*linea de prueba*/
+	display: flex; /* items hijos h3 y nav con comportamiento de bloque */
+	flex-direction: column; /* items hijos de arriba hacia abajo*/
+	align-items: center;
+	margin: 2% 4%;
+}
+
+.menuSede {
+border: 1px solid black; /*linea de prueba*/
+display: inline-flex; /* items hijos botones comportamiento inline-block*/
+justify-content: center; /* items hijos centrados horizontalmente*/
+}
+
+/* contendor global flex*/
+.cont-global {
+	margin: 2% 4%;
+}
+
+.cont-child {
+	border: 1px solid black; /*linea de prueba*/
+	background-color: #FFF;
+	box-shadow: 2px 2px 10px rgb(177, 177, 177); /*Sombra normal*/
+}

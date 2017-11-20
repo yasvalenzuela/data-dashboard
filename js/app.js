@@ -77,7 +77,5 @@ btnCalendar.addEventListener("click", function() {
 		console.log("ocultar");
 		calendar.classList.remove("seeCalendar");
 		calendar.classList.add("hideCalendar");
-		
 	}
-
 });
