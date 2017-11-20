@@ -199,27 +199,73 @@ nav {
  }
  */
 
- #title {
-	border: 1px solid black; /*linea de prueba*/
-	display: flex; /* items hijos h3 y nav con comportamiento de bloque */
-	flex-direction: column; /* items hijos de arriba hacia abajo*/
-	align-items: center;
-	margin: 2% 4%;
+/* contendor global flex*/
+
+#cont-global {
+	border: 1px solid black;/*linea de prueba*/
+	width: 100%;
+	margin: 0 4%;
+	padding: 2%;
 }
+
+ #title {
+	width: 100%;
+	border: 1px solid black; /*linea de prueba*/
+	display: inline-flex; /* items hijos h3 y nav con comportamiento de bloque */
+}
+
 
 .menuSede {
 	border: 1px solid black; /*linea de prueba*/
 	display: inline-flex; /* items hijos botones comportamiento inline-block*/
-	justify-content: center; /* items hijos centrados horizontalmente*/
 }
 
-/* contendor global flex*/
-.cont-global {
-	margin: 2% 4%;
+
+#indicadores {
+	border: 1px solid black; /*linea de prueba*/
+	display:inline-flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.child-format {
+	border: 1px solid black; /*linea de prueba*/
+	background-color: #FFF;
+	box-shadow: 2px 2px 10px rgb(177, 177, 177); /*Sombra normal*/
+}
+
+#enrollment, #achievement,
+#NPS, #studentStf, 
+#teacherRtg, #jediRtg {
+	height: 15em;
+	flex-grow: 1;
+	padding: 0.5em;
+	margin: 1%;
+	width: 25%;
+
+}
+
+#techSkills, #lifeSkills {
+	margin: 1%;
+	height: 25em ;
+	padding: 0.5em;
+	flex-grow: 2;
+	width: 40%;
 }
 
 .cont-child {
 	border: 1px solid black; /*linea de prueba*/
 	background-color: #FFF;
 	box-shadow: 2px 2px 10px rgb(177, 177, 177); /*Sombra normal*/
+	margin: 2% 4%;
+
 }
+
+#introInfo {
+	display: inline-flex;
+	width: 100%;
+	margin: 2% 4%;
+}
+
+

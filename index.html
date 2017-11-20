@@ -109,59 +109,61 @@
       </div>
       <h1>¡Bienvenida Vale Smith!</h1>
     </section>
-    <section id="title">
-      <h2>Santiago de Chile. 2017. 2° Generation</h2>
-      <nav id class="menuSede">
-        <button type="button">Overview</button>
-        <button type="button">Students</button>
-        <button type="button">Teachers</button>
-      </nav>
-    </section>
     <!-- Contenedor global flex-->
-    <section class="cont-global">
+    <section id="cont-global">
+      <section id="title">
+        <h2>Santiago de Chile. 2017. 2° Generation</h2>
+        <nav id class="menuSede">
+          <button type="button">Overview</button>
+          <button type="button">Students</button>
+          <button type="button">Teachers</button>
+        </nav>
+      </section>
       <!-- indicadores -->
-      <section id="indicadores" class="cont-child">
-        <div id="enrollment">
+      <section id="indicadores">
+        <div id="enrollment" class="child-format" >
           <h3>Enrollment</h3>
         </div>
-        <div id="achievement">
+      <div id="achievement" class="child-format">
           <h3>Achievement</h3>
         </div>
-        <div id="NPS">
+      <div id="NPS" class="child-format">
           <h3>Net Promoter Score</h3>
         </div>
-        <div id="techSkills">
+        <div id="techSkills" class="child-format">
           <h3>TechSkills</h3>
         </div>
-        <div id="lifekills">
+        <div id="lifeSkills" class="child-format">
           <h3>lifeSkills</h3>
         </div>
-        <div id="studentStf">
+        <div id="studentStf" class="child-format">
           <h3>Student Satisfaction</h3>
         </div>
-        <div id="teacherRtg">
+        <div id="teacherRtg" class="child-format">
           <h3>Teacher Rating</h3>
         </div>
-        <div id="jediRtg">
+        <div id="jediRtg" class="child-format">
           <h3>Jedi Master Rating</h3>
         </div>
       </section>
+    </section>
+    <section id="infoIntro">
       <!-- actualizacion de lms -->
       <section id="actualizacion" class="cont-child">
         <h3>Actualizaciones LMS</h3>
         <ul>
-            <li>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </li>
-            <li>
-          <p>Provident nostrum quidem beatae quo hic eaque sunt excepturi eveniet</p>
-            </li>
-            <li>
-          <p>molestias quia voluptatem tempore illo, voluptatibus laborum, architecto aperiam sequi ducimus suscipit?</p>
-            </li>
-            <li>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </li>
+          <li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </li>
+          <li>
+            <p>Provident nostrum quidem beatae quo hic eaque sunt excepturi eveniet</p>
+          </li>
+          <li>
+            <p>molestias quia voluptatem tempore illo, voluptatibus laborum, architecto aperiam sequi ducimus suscipit?</p>
+          </li>
+          <li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </li>
         </ul>
       </section>
       <!-- noticias/eventos -->
@@ -188,15 +190,11 @@
         <img src="assets/images/calendar_demo2.png" alt="Calendar">
       </section>
     </section>
-    <section id="indicadores">
-      <!-- indicadores -->
-    </section>
     <section>
       <div>
         
       </div>
     </section>
-
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
