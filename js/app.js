@@ -16,6 +16,7 @@ menuDesplegado.addEventListener('click', function(){
 	document.getElementById('actualizacion').style.display = 'none';
 	document.getElementById('eventos').style.display = 'none';
 	document.getElementById('indicadores').style.display = 'none';
+	document.getElementById('calendario').style.display='none';
 	var menuOculto = document.getElementById('menuOculto');
 	menuOculto.style.display = 'block';
 });
@@ -30,6 +31,16 @@ clickIcono.addEventListener('click', function(){
 	subIcono.style.display='inline-block';
 })
 
+//evento de click al clickear primera generacion
+var iconoDesplegado = document.getElementById('iconoDesplegado');
+iconoDesplegado.addEventListener('click', function(){
+})
+
+//evento de click al clickear segunda generacion
+var desplegadoIcono = document.getElementById('desplegadoIcono');
+desplegadoIcono.addEventListener('click', function(){
+
+})
 
 
 //AREQUIPA
@@ -41,6 +52,18 @@ eventoClick.addEventListener('click', function(){
 	subEventoClick.style.display='inline-block';
 })
 
+//evento de click al clickear primera generacion
+var iconDesplegado = document.getElementById('iconDesplegado');
+iconDesplegado.addEventListener('click', function(){
+})
+
+//evento de click al clickear segunda generacion
+var desplegadoIcon = document.getElementById('desplegadoIcon');
+desplegadoIcon.addEventListener('click', function(){
+
+})
+
+
 //LIMA
 //evento de click sede lima despliega generaciones
 document.getElementById('subClickEvento').style.display='none';
@@ -50,14 +73,52 @@ clickEvento.addEventListener('click', function(){
 	subClickEvento.style.display='inline-block';
 })
 
+//evento de click al clickear primera generacion
+var circleDesplegado = document.getElementById('circleDesplegado');
+circleDesplegado.addEventListener('click', function(){
+})
+
+//evento de click al clickear segunda generacion
+var circleDesplegadoUno = document.getElementById('circleDesplegadoUno');
+circleDesplegadoUno.addEventListener('click', function(){
+
+})
+
+//evento de click al clickear tercera generacion
+var circleDesplegadoDos = document.getElementById('circleDesplegadoDos');
+circleDesplegadoDos.addEventListener('click', function(){
+})
+
 
 //santiago
+document.getElementById('title').style.display='none';
+document.getElementById('indicadores').style.display='none';
 //evento de click de seleccion de sede santiago se despliega las generaciones
 //debo arreglarla porque cuando vuelvo hacer click no se despliega
 document.getElementById('subIconoClick').style.display= 'none';
 var iconoClick = document.getElementById('iconoClick');
 iconoClick.addEventListener('click', function(){
 	var subIconoClick = document.getElementById('subIconoClick').style.display= 'inline-block';
+})
+
+//evento de click al clickear primera generacion
+var desplegadoCircle = document.getElementById('desplegadoCircle');
+desplegadoCircle.addEventListener('click', function(){
+	var title = document.getElementById('title');
+	title.style.display='block';
+	var indicadores = document.getElementById('indicadores');
+	indicadores.style.display='block';
+})
+
+//evento de click al clickear segunda generacion
+var desplegadoCircleUno = document.getElementById('desplegadoCircleUno');
+desplegadoCircleUno.addEventListener('click', function(){
+
+})
+
+//evento de click al clickear tercera generacion
+var desplegadoCircleDos = document.getElementById('desplegadoCircleDos');
+desplegadoCircleDos.addEventListener('click', function(){
 })
 
 //evento de click al seleccionar primera generacion
