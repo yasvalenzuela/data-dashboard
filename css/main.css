@@ -37,7 +37,6 @@ header {
 	padding: 1%;
 }
 
-
 /* contenedor elementos cont-menu */
 nav {
 	/*border: 1px solid black; linea de prueba*/
@@ -167,10 +166,10 @@ nav {
 
  /*menu oculto*/
  #menuOculto {
- 	background-color: #ffffff;
+ 	background-color: #FFC107;
  	width: 14%;
  	margin-top: 5em;
- 	border: 1px solid red;
+ 	/*border: 1px solid red;*/
 	position: fixed;
 	padding: 1%;
  	height: auto;
@@ -204,7 +203,6 @@ nav {
  */
 
 /* contendor global flex*/
-
 #cont-global {
 	/*border: 1px solid black;/*linea de prueba*/
 	width: 84%;
@@ -212,9 +210,10 @@ nav {
 	display: flex;
 }
 
+/* contenedor titulo generacion*/
  #title {
 	width: 100%;
-	border: 1px solid black; /*linea de prueba*/
+	/*border: 1px solid black; /*linea de prueba*/
 	display: inline-flex; /* items hijos h3 y nav con comportamiento de bloque */
 	flex-direction: column;
 	align-items: center;
@@ -225,14 +224,14 @@ nav {
 	font-size: 1.8em;
 	color:rgb(102, 102, 102);
 	font-family: 'PT Sans',sans-serif;
-		border: 1px solid black;
-		/*linea de prueba*/
+	/*border: 1px solid black; /*linea de prueba*/
 	width: 100%;
 }
 
+/* contenedor menu de cada sede: overview, students, teacher*/
 #menuSede {
 	justify-content:;
-	border: 1px solid black; /*linea de prueba*/
+	/*border: 1px solid black; /*linea de prueba*/
 	display: inline-flex; /* items hijos botones comportamiento inline-block*/
 }
 
@@ -244,20 +243,19 @@ nav {
 	padding: 1%;
 }
 
+/* contenedor general para indicadores dashboard*/
 #indicadores {
-	border: 1px solid black; /*linea de prueba*/
+	/*border: 1px solid black; /*linea de prueba*/
 	display: inline-flex;
 	flex-flow: wrap;
 	justify-content: space-between;
 	width: 100%;
 	padding: 2% 4% 10%;
-
 }
 
 .child-format {
 	/*border: 1px solid black; /*linea de prueba*/
 	background-color: #FFF;
-	border-radius: 0.5em;
 }
 
 #enrollment, #achievement,
@@ -267,73 +265,50 @@ nav {
 	margin: 1%;
 	width: 30%;
 	display: inline-flex;
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: 100%;
+	align-items: flex-start;
+	overflow: hidden;
 }
 
 #enrollment,
 #achievement,
 #NPS {
-	height: 11em;
+	height: auto;
 }
 
-#charts1 {
-	width: 100%;
-	height: 20em;
-	background-color: rgb(185, 185, 185);
-}
 
+/* contenedor general para gráficos*/
 #techSkills, #lifeSkills {
-	margin: 1%;
+	margin: 2% 0 5%;
 	height: 25em ;
-	padding: 0.5em;
 	flex-grow: 2;
 	width: 47%;
 	display: inline-flex;
+	/*border: 1px solid black; /*linea de prueba*/
+
 }
 
 #studentStf,
 #teacherRtg,
 #jediRtg {
-	height: 11.5em;
+	height: auto;
 }
 
+/* contenedor general para gráficos*/
 #charts2 {
 	width: 100%;
 	height: 20em;
 	background-color: rgb(185, 185, 185);
 }
 
-#enrollment {
-	background-image: url(../assets/images/01_enrollment.png);
+#indicadores img {
+	width: 100%;
+	overflow: hidden;
 }
-
-#achievement {
-	background-image: url(../assets/images/02_achievement.png);
-}
-
-#NPS {
-	background-image: url(../assets/images/03_NPS.png);
-}
-
-#studentStf {
-	background-image: url(../assets/images/07_student.png);
-}
-
-#teacherRtg {
-	background-image: url(../assets/images/08_teacher.png);	
-}
-
-#jediRtg {
-	background-image: url(../assets/images/09_jedi.png);
-}
-
-
+/* contenedor general información inicial: eventos, LMS. calendario*/
 #infoIntro {
 	/*border: 1px solid black; /*linea de prueba*/
 	display: inline-flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 4%;
 }
 
@@ -354,8 +329,7 @@ nav {
 }
 
 #infoIntro ul {
-	background-color: #FFF;
-	/*border: 1px solid black;/*linea de prueba*/
+	/*background-color: #FFF;/*border: 1px solid black;/*linea de prueba*/
 	padding: 0;
 	list-style:none;
 	height: 45vh ;
@@ -372,6 +346,7 @@ nav {
 }
 
 #infoIntro ul li {
+	background-color: #FFF;
 	padding: 3%;
 	/*border: 1px solid black; /*linea de prueba*/
 }
@@ -381,4 +356,30 @@ nav {
 	padding: 1%;
 }
 
+/* clase contenedor para pestañas de gráficos*/
 
+.graph1 {
+	width: 30%;
+	/*border: 1px solid black; /*linea de prueba*/
+}
+
+#indicadores .show img {
+	width: 40%;
+}
+
+.verticalLine {
+	border-left: 1px solid rgb(192, 192, 192);
+	margin: 2%;
+	height: 70vh;
+}
+
+hr {
+	width:100%;
+	background-color: rgb(192, 192, 192);
+	border:none;
+	height: 1px;
+	margin :3%;
+
+}
+
+/* contenedor general para gráficos*/

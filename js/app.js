@@ -145,7 +145,8 @@ indicadores.style.display='none';
 var iconoDesplegado = document.getElementById('iconoDesplegado');
 iconoDesplegado.addEventListener('click', function(){
 	document.getElementById('cont-global').style.display='inline-block';
-	document.getElementById('indicadores').style.display='inline-block';
+	document.getElementById('indicadores').style.display='inline-flex';
+	/*DE JOHANNA: dejar como inline-flex así se ajusta parejo dentro del div ;D */
 	/*
 	var cdmxUno = data.CDMX['2017-1'];
 	var cdmxInscritas20171 = inscritas(cdmxUno);
