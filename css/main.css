@@ -171,8 +171,9 @@ nav {
  	width: 14%;
  	margin-top: 5em;
  	border: 1px solid red;
-	 position: fixed;
-	 padding: 1%;
+	position: fixed;
+	padding: 1%;
+ 	height: auto;
  }
 
  #desplegado img {
@@ -341,8 +342,8 @@ nav {
 	font-size: 1.5em;
 }
 
-	#actualizacion,
-	#eventos,
+#actualizacion,
+#eventos,
 #calendario {
 	background-color: rgb(255, 250, 175);
 	width: 30%;
