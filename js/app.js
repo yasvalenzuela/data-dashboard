@@ -228,6 +228,14 @@ btnCalendar.addEventListener("click", function() {
 	}
 });
 
+//evento de click de estudiantes
+var student = document.getElementById('students');
+student.addEventListener('click', function(){
+	document.getElementById('cont-global').style.display='none';
+	document.getElementById('indicadores').style.display='none';
+	document.getElementById('students').style.display='block';
+})
+
 //funciones generales para obtener los datos requeridos
 //funcion para calcular las estudiantes inscritas por generacion
 /*
