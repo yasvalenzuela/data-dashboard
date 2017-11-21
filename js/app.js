@@ -305,12 +305,6 @@ var desplegadoCircleDos = document.getElementById('desplegadoCircleDos');
 desplegadoCircleDos.addEventListener('click', function(){
 })
 
-//evento de click al seleccionar primera generacion
-
-//evento de click al seleccionar segunda generacion
-//evento de click al seleccionar tercera generacion
-
-
 //HEAD
 // funcion que muestra el demo-calendario
 //document.getElementById('datePopUp').style.display='none';
